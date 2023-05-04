@@ -2,11 +2,14 @@
 import "./App.css";
 import Map from "react-map-gl";
 import maplibregl from "maplibre-gl";
-import ReactMapGL from 'react-map-gl';
+import Navbar from "./Compenent/navbar";
+import Footer from "./Compenent/Footer";
 
 
 function App() {
   return (
+    <div>
+    <Navbar />
     <div className="flex flex-col gap-6" style={{ height: "100%" }}>
       <section
         style={{
@@ -30,7 +33,8 @@ function App() {
         />
       </section>
 
-
+    </div>
+    <Footer />
     </div>
   );
 }
